@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>محمد الموسى — أساعد البراندات تحكي قصص أفضل</title>
+<meta name="description" content="محمد الموسى، صانع محتوى ومؤثر سعودي وسفير بيجو المجدوعي. فلوقات ريلز، مقابلات، إعلانات سناب شات، ووثائقيات للبراندات.">
+<meta property="og:title" content="محمد الموسى — أساعد البراندات تحكي قصص أفضل">
+<meta property="og:description" content="صانع محتوى ومؤثر سعودي. اطلب إعلانك الحين.">
+<meta property="og:image" content="https://mohammedalmousa.net/mohammed-smile.jpg">
+<meta property="og:url" content="https://mohammedalmousa.net/">
+<link rel="canonical" href="https://mohammedalmousa.net/">
+<meta name="theme-color" content="#0E0E0E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E0E0E'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='%23E89400' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+@font-face{font-family:'IBM Plex Sans Arabic';src:url('IBMPlexSansArabic-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+:root{
+  --bg:#0E0E0E; --ink:#111111; --white:#FFFFFF; --paper:#F7F4EF;
+  --red:#D31600; --orange:#E89400; --green:#005313; --blue:#0462AD;
+  --grey:#262626; --muted:#6F6A64; --line:#E6E1DA; --r:22px;
+  --ease:cubic-bezier(.2,.7,0,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;font-weight:500;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer}
+.wrap{max-width:1400px;margin:0 auto;padding:0 16px}
+.card{border-radius:var(--r);overflow:hidden;position:relative}
+.white{background:var(--white)} .paper{background:var(--paper)}
+.red{background:var(--red);color:#fff} .orange{background:var(--orange)} .green{background:var(--green);color:#fff} .blue{background:var(--blue);color:#fff} .dark{background:#1B1B1B;color:#fff}
+.kicker{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.04em}
+.kicker i{display:inline-block;width:10px;height:22px;border-radius:2px}
+.kicker i:nth-child(1){background:var(--red)} .kicker i:nth-child(2){background:var(--orange);margin-inline-start:-8px} .kicker i:nth-child(3){background:var(--green);margin-inline-start:-8px} .kicker i:nth-child(4){background:var(--blue);margin-inline-start:-8px}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.05em;border:1.5px solid currentColor;border-radius:999px;padding:5px 12px}
+.pill{display:inline-flex;align-items:center;gap:10px;border-radius:999px;font-weight:600;font-size:16px;padding:16px 30px;transition:transform .25s var(--ease),background .2s,box-shadow .25s}
+.pill:hover{transform:translateY(-3px)}
+.pill.black{background:var(--ink);color:#fff}
+.pill.black:hover{box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.circle{width:48px;height:48px;border-radius:999px;background:var(--orange);color:var(--ink);display:grid;place-items:center;flex-shrink:0;transition:transform .35s var(--ease)}
+.circle svg{width:20px;height:20px}
+a:hover .circle,.circle:hover,button:hover .circle{transform:translate(-2px,-2px) scale(1.08)}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:999px;padding:10px 18px;font-size:14px;font-weight:600;background:#fff;transition:border-color .2s,transform .25s var(--ease)}
+.chip:hover{border-color:var(--ink);transform:translateY(-2px)}
+.chip i{width:9px;height:9px;border-radius:999px;display:inline-block}
+.chip svg{width:18px;height:18px}
+h1,h2,h3{font-weight:700;letter-spacing:-.01em;line-height:1.15}
+
+/* PROGRESS + NAV */
+.progress{position:fixed;top:0;right:0;left:0;height:3px;z-index:60;transform-origin:right;transform:scaleX(0);background:linear-gradient(90deg,var(--blue),var(--green),var(--orange),var(--red))}
+nav.top{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;height:84px;color:#fff;transition:height .3s var(--ease),background .3s}
+nav.top::before{content:"";position:absolute;inset:0 -16px;background:rgba(14,14,14,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);opacity:0;transition:opacity .3s;z-index:-1}
+nav.top.scrolled{height:68px}
+nav.top.scrolled::before{opacity:1}
+.logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:700}
+.logo b{width:28px;height:28px;border-radius:8px;background:conic-gradient(var(--red) 0 25%,var(--orange) 0 50%,var(--green) 0 75%,var(--blue) 0);display:grid;place-items:center;color:#fff;font-size:14px;transition:transform .6s var(--ease)}
+.logo:hover b{transform:rotate(90deg)}
+.links{display:flex;gap:36px;font-size:14px;font-weight:600;letter-spacing:.03em}
+.links a{position:relative;opacity:.85;transition:opacity .2s}
+.links a::after{content:"";position:absolute;right:0;left:0;bottom:-6px;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:right;transition:transform .3s var(--ease)}
+.links a:hover{opacity:1}.links a:hover::after{transform:scaleX(1)}
+.navcta{display:flex;align-items:center;gap:8px}
+.navcta .pill{background:var(--grey);color:#fff;padding:13px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;color:#fff}
+
+/* ASPECT-TRUE ROWS: media keep their natural ratio, so nothing gets cropped */
+.row{display:flex;gap:12px;margin-bottom:12px;align-items:stretch}
+.ar{flex:calc(var(--ar)) 1 0;aspect-ratio:var(--ar);min-width:0}
+.fx{flex:calc(var(--f,1)) 1 0;min-width:0}
+.media img,.media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.media{container-type:inline-size}
+/* captions on photos/clips: centred, and scaled to the card they sit on */
+.media .ph-cap{left:6%;right:6%;inset-inline:6%;bottom:7%;text-align:center;font-size:clamp(16px,8.5cqw,46px);line-height:1.2;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.vtag{position:absolute;top:18px;left:50%;transform:translateX(-50%);white-space:nowrap;z-index:3;display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;border-radius:999px;padding:8px 14px;font-size:12px;font-weight:600}
+.vtag i{width:8px;height:8px;border-radius:999px;background:var(--red)}
+.js .vtag i{animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+.reels .card{border-radius:20px}
+/* one arrow button everywhere: same size, same colours */
+.go .circle{width:40px;height:40px}
+.go .circle svg{width:17px;height:17px}
+.orange .circle{background:var(--ink);color:var(--orange)}
+/* static partner logos */
+.logos{background:#fff;border-radius:var(--r);margin-bottom:12px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.logos img{height:40px;width:auto}
+.logos .pwm{font-family:system-ui,sans-serif;letter-spacing:.18em;font-size:24px;font-weight:700}
+/* OUTBOX */
+.ob-text{padding:44px;display:flex;flex-direction:column;gap:20px}
+.ob-text h3{font-size:clamp(34px,3.6vw,54px)}
+.ob-text p{font-size:17px;opacity:.9;max-width:520px}
+.ob-list{display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.ob-list li{list-style:none;display:flex;align-items:center;gap:14px;font-size:20px;font-weight:700}
+.ob-list b{width:34px;height:34px;border-radius:6px;display:grid;place-items:center;color:#fff}
+.ob-list b svg{width:18px;height:18px}
+.ob-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ob-foot .pill{background:#fff;color:var(--blue)}
+.ob-foot small{font-size:14px;opacity:.85;direction:ltr}
+.slider{background:#0A0A0A}
+.slides{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.slides::-webkit-scrollbar{display:none}
+.slides a{flex:0 0 100%;height:100%;scroll-snap-align:start;position:relative}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sl-ctrl{position:absolute;bottom:18px;left:18px;right:18px;z-index:3;display:flex;justify-content:space-between;align-items:center;pointer-events:none}
+.sl-ctrl>*{pointer-events:auto}
+.sl-btns{display:flex;gap:8px}
+.sl-btns button{border:0;padding:0}
+.sl-dots{display:flex;gap:6px;background:rgba(0,0,0,.45);backdrop-filter:blur(8px);padding:8px 10px;border-radius:999px}
+.sl-dots button{width:9px;height:9px;border-radius:999px;border:0;padding:0;background:rgba(255,255,255,.45);transition:width .3s var(--ease),background .3s}
+.sl-dots button[aria-current="true"]{width:26px;background:#fff}
+/* GRID */
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px;margin-bottom:12px}
+.s7{grid-column:span 7}.s5{grid-column:span 5}.s4{grid-column:span 4}.s8{grid-column:span 8}.s6{grid-column:span 6}.s3{grid-column:span 3}.s12{grid-column:span 12}
+
+/* HERO */
+.hero-text{padding:44px 48px;display:flex;flex-direction:column}
+.hero-text h1{font-size:clamp(46px,6.6vw,98px);margin:34px 0 28px;line-height:1.08}
+.hl{position:relative;white-space:nowrap}
+.hl::before{content:"";position:absolute;right:-4px;left:-4px;bottom:.08em;height:.32em;background:var(--orange);z-index:-1;transform-origin:right;transform:scaleX(1)}
+.hero-text h1{position:relative;z-index:0}
+.hero-text p{font-size:18px;color:#3A3632;max-width:560px}
+.hero-foot{margin-top:auto;display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding-top:34px}
+.wave{display:flex;align-items:center;gap:14px;font-size:13px;font-weight:600;line-height:1.35}
+.wave svg{width:34px;height:28px}
+.wave rect{transform-origin:center;transform-box:fill-box}
+.js .wave rect{animation:eq 1.2s ease-in-out infinite}
+.wave rect:nth-child(2){animation-delay:.1s}.wave rect:nth-child(3){animation-delay:.25s}.wave rect:nth-child(4){animation-delay:.4s}.wave rect:nth-child(5){animation-delay:.2s}.wave rect:nth-child(6){animation-delay:.35s}.wave rect:nth-child(7){animation-delay:.05s}
+@keyframes eq{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.35)}}
+.js .hero-photo img{animation:kb 16s ease-in-out infinite alternate;transform-origin:50% 30%}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}
+.shade::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.7) 100%);pointer-events:none}
+.ph-top{position:absolute;top:24px;inset-inline:24px;display:flex;justify-content:space-between;z-index:2}
+.ph-badge{width:52px;height:52px;border-radius:999px;background:var(--ink);display:grid;place-items:center;color:var(--orange)}
+.ph-badge svg{width:24px;height:24px}
+.js .ph-badge svg{animation:spin 12s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ph-chip{background:rgba(255,255,255,.92);border-radius:999px;padding:10px 16px;font-size:13px;font-weight:600;display:flex;gap:8px;align-items:center;height:fit-content}
+.ph-chip svg{width:16px;height:16px;color:var(--red)}
+.ph-cap{position:absolute;bottom:30px;inset-inline:30px;z-index:2;color:#fff;font-size:34px;font-weight:700;line-height:1.2}
+
+/* word reveal */
+.js .w{display:inline-block;opacity:0;transform:translateY(40%) rotate(2deg);animation:rise .9s var(--ease) forwards}
+.js .hl::before{transform:scaleX(0);animation:draw .8s var(--ease) 1s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes draw{to{transform:scaleX(1)}}
+
+/* ROW 2 */
+.contact-mini{padding:26px;display:flex;gap:28px;min-height:260px}
+.cm-photo{width:190px;flex-shrink:0;position:relative;align-self:flex-start;margin-inline-end:28px}
+.cm-photo img{width:100%;height:auto;aspect-ratio:1017/1800;object-fit:cover;border-radius:18px;box-shadow:-14px 0 0 var(--orange),-28px 0 0 var(--ink);transition:box-shadow .4s var(--ease)}
+.contact-mini:hover .cm-photo img{box-shadow:-20px 0 0 var(--orange),-40px 0 0 var(--ink)}
+.cm-body{flex:1;display:flex;flex-direction:column;padding-inline-start:16px}
+.cm-meta{display:flex;justify-content:space-between;font-size:13px;font-weight:600;opacity:.9}
+.cm-body h2{font-size:36px;margin-top:auto}
+.cm-body h2 .circle{display:inline-grid;vertical-align:middle;margin-inline-start:10px}
+.stats{padding:28px 30px;display:flex;flex-direction:column;gap:18px}
+.stat-row{display:flex;align-items:center;justify-content:space-between}
+.big{font-size:72px;font-weight:700;line-height:1;display:flex;align-items:baseline;gap:14px;font-family:system-ui,sans-serif}
+.big small{font-size:13px;font-weight:600;color:var(--muted);line-height:1.4;font-family:'IBM Plex Sans Arabic',sans-serif}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+
+/* MARQUEES */
+.marquee{border-radius:var(--r);overflow:hidden;margin-bottom:12px;padding:22px 0}
+.marquee.orange{background:var(--orange)}
+.marquee.logos{background:#fff;padding:26px 0}
+.track{display:flex;gap:40px;width:max-content;animation:scroll 32s linear infinite;font-size:30px;font-weight:700;white-space:nowrap}
+.track.rev{animation-direction:reverse;animation-duration:26s}
+.track span{display:flex;align-items:center;gap:40px}
+.track svg{width:24px;height:24px}
+.track img{height:40px;width:auto}
+.track .pwm{font-family:system-ui,sans-serif;letter-spacing:.18em;font-size:26px}
+.track .dot{width:10px;height:10px;border-radius:999px;background:var(--ink);opacity:.2}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(50%)}}
+.marquee:hover .track{animation-play-state:paused}
+
+/* SECTION HEAD */
+.shead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;color:#fff;padding:72px 8px 26px}
+.shead h2{font-size:clamp(34px,4.6vw,64px)}
+.shead p{color:#B9B3AB;max-width:380px;font-size:16px}
+
+/* PEUGEOT */
+.peugeot{color:#fff;background:#0A0A0A}
+.peugeot img{transition:transform 1.4s var(--ease)}
+.peugeot:hover img{transform:scale(1.05)}
+.peugeot::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,0) 70%)}
+.pg-body{position:relative;z-index:2;padding:44px;display:flex;flex-direction:column;height:100%;max-width:560px}
+.pg-body h3{font-size:54px;margin:22px 0 16px}
+.pg-body p{color:#E7E2DB;font-size:17px}
+.pg-foot{margin-top:auto;display:flex;align-items:center;gap:18px;padding-top:28px}
+.pg-foot .wm{font-size:24px;font-weight:700;letter-spacing:.16em;font-family:system-ui,sans-serif}
+.pg-foot .sep{width:1px;height:26px;background:rgba(255,255,255,.4)}
+
+/* COUPONS */
+.coupon{min-height:270px;display:flex;flex-direction:column;transition:transform .4s var(--ease)}
+.coupon:hover{transform:translateY(-6px) rotate(-.6deg)}
+.cp-top{padding:26px 28px;height:140px;display:flex;justify-content:space-between;align-items:flex-start}
+.cp-brand{display:flex;flex-direction:column;gap:8px}
+.cp-brand small{font-size:12px;font-weight:600;opacity:.75}
+.cp-brand img{height:52px;width:auto;object-fit:contain;object-position:right}
+.cp-cut{position:relative;height:0;margin:0 28px;border-top:2px dashed rgba(0,0,0,.25)}
+.dark .cp-cut,.blue .cp-cut{border-color:rgba(255,255,255,.35)}
+.cp-cut::before,.cp-cut::after{content:"";position:absolute;top:-15px;width:28px;height:28px;border-radius:999px;background:var(--bg)}
+.cp-cut::before{right:-43px}.cp-cut::after{left:-43px}
+.cp-bottom{flex:1;padding:22px 28px;display:flex;justify-content:space-between;align-items:center}
+.code small{display:block;font-size:12px;font-weight:600;opacity:.75}
+.code b{font-size:40px;font-weight:700;letter-spacing:.14em;direction:ltr;display:block;font-family:system-ui,sans-serif}
+.copy{border:0;border-radius:999px;padding:13px 22px;font-size:14px;font-weight:600;background:var(--ink);color:#fff;transition:transform .25s var(--ease),background .2s}
+.copy:hover{transform:scale(1.05)}
+.dark .copy{background:var(--orange);color:var(--ink)}
+.blue .copy{background:#fff;color:var(--blue)}
+.copy.done{background:#16A34A!important;color:#fff!important}
+
+/* STORY ROW */
+.story{margin-top:72px}
+.story-text{padding:48px;display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.story-text h2{font-size:clamp(40px,5vw,76px)}
+.story-text p{max-width:420px;color:#CFC9C1;font-size:18px}
+.story-text .dots{display:flex;gap:6px}
+.story-text .dots i{width:34px;height:6px;border-radius:999px}
+.story .media img{transition:transform 1.4s var(--ease)}
+.story .media:hover img{transform:scale(1.04)}
+
+/* SERVICES */
+.svc{padding:30px;min-height:430px;display:flex;flex-direction:column;gap:14px;transform-style:preserve-3d;transition:transform .5s var(--ease),box-shadow .5s var(--ease);will-change:transform}
+.svc:hover{box-shadow:0 26px 50px rgba(0,0,0,.45)}
+.svc .num{font-size:92px;font-weight:700;line-height:.9;opacity:.2;font-family:system-ui,sans-serif}
+.svc .ic{width:54px;height:54px;border-radius:999px;display:grid;place-items:center;background:rgba(255,255,255,.95);color:var(--ink);transition:transform .5s var(--ease)}
+.orange .ic{background:var(--ink);color:var(--orange)}
+.svc:hover .ic{transform:rotate(-12deg) scale(1.1)}
+.svc .ic svg{width:24px;height:24px}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start}
+.svc h3{font-size:30px;margin-top:auto}
+.svc p{font-size:15px;opacity:.88}
+.svc .go{display:flex;align-items:center;justify-content:space-between;font-size:14px;font-weight:600;padding-top:10px;border-top:1.5px solid rgba(255,255,255,.25)}
+.orange .go{border-color:rgba(0,0,0,.15)}
+.svc .go span{transition:transform .3s var(--ease)}
+.svc:hover .go span{transform:translateX(-6px)}
+
+/* CONTACT */
+.c-info{padding:44px;display:flex;flex-direction:column;gap:20px}
+.c-info h2{font-size:clamp(34px,3.8vw,56px)}
+.steps{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.step{display:flex;gap:14px;align-items:center;font-size:17px;font-weight:600}
+.step b{width:38px;height:38px;border-radius:999px;background:var(--ink);color:var(--orange);display:grid;place-items:center;flex-shrink:0}
+.c-row{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;padding-top:22px;border-top:1.5px solid rgba(0,0,0,.15)}
+.c-mail small{font-size:12px;font-weight:600;opacity:.7}
+.c-mail a{display:block;direction:ltr;text-align:right;font-size:clamp(16px,4.4vw,21px);font-weight:700;margin-top:4px;overflow-wrap:anywhere}
+.socials{display:flex;flex-wrap:wrap;gap:8px}
+.socials a{border:1.5px solid var(--ink);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;transition:background .2s,color .2s}
+.socials a:hover{background:var(--ink);color:var(--orange)}
+form.c-form{padding:44px;display:flex;flex-direction:column;gap:20px}
+.c-form-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.c-form h3{font-size:36px}
+.c-form .sub{color:var(--muted)}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600}
+input,select,textarea{font-family:inherit;font-size:16px;font-weight:500;border:1.5px solid var(--line);border-radius:14px;padding:15px 16px;background:#FAF8F5;color:var(--ink);outline:none;transition:border-color .2s,background .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--ink);background:#fff;box-shadow:0 0 0 4px rgba(232,148,0,.25)}
+textarea{min-height:120px;resize:vertical}
+.types{display:flex;flex-wrap:wrap;gap:8px}
+.types input{position:absolute;opacity:0;pointer-events:none}
+.types label{flex-direction:row;cursor:pointer}
+.types span{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:999px;padding:11px 18px;font-size:14px;transition:all .25s var(--ease)}
+.types span i{width:9px;height:9px;border-radius:999px}
+.types input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink);transform:scale(1.04)}
+.types input:focus-visible+span{outline:2px solid var(--orange);outline-offset:2px}
+.f-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.f-foot small{color:var(--muted);font-size:14px}
+.f-foot button{border:0}
+
+footer{display:flex;justify-content:space-between;align-items:center;color:#8C867E;font-size:13px;padding:36px 8px 44px;gap:16px;flex-wrap:wrap}
+.pal{display:flex;gap:4px}.pal i{width:18px;height:6px;border-radius:999px}
+
+.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,120px);background:var(--orange);color:var(--ink);font-weight:700;padding:14px 24px;border-radius:999px;transition:transform .35s var(--ease),opacity .35s;z-index:70;opacity:0;pointer-events:none}
+.toast.show{transform:translate(-50%,0);opacity:1}
+
+/* reveals */
+.js .rv{opacity:0;transform:translateY(34px) scale(.985);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.clip{transform:none;clip-path:inset(0 0 100% 0 round 22px);transition:clip-path 1.1s var(--ease),opacity .6s}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.clip.in{clip-path:inset(0 0 0 0 round 22px)}
+
+@media (prefers-reduced-motion:reduce){
+  .js .rv,.js .rv.clip{opacity:1;transform:none;clip-path:none;transition:none}
+  .js .w{opacity:1;transform:none;animation:none}
+  .js .hl::before{transform:scaleX(1);animation:none}
+  .track,.js .hero-photo img,.js .wave rect,.js .ph-badge svg,.js .vtag i{animation:none}
+  *{transition:none!important}
+}
+
+@media (max-width:1000px){
+  .links{display:none}.burger{display:block}
+  nav.top.open .links{display:flex;position:absolute;top:100%;inset-inline:0;flex-direction:column;background:#1B1B1B;padding:22px;border-radius:18px;gap:18px}
+  .s7,.s5,.s4,.s8,.s6,.s3{grid-column:span 12}
+  .row{flex-direction:column}.ar,.fx{flex:none;width:100%}
+  .reels{flex-direction:row;flex-wrap:wrap;align-items:flex-start}.reels .ar{width:calc(50% - 6px)}.reels .ar[style*="16/9"]{width:100%;order:-1}
+  .hero-text{padding:32px 26px}
+  .story-text{padding:30px}
+  .contact-mini{flex-direction:column}.cm-photo{width:62%;margin:0 0 0 28px}.cm-body{padding:0}
+  .fgrid{grid-template-columns:1fr}
+  .shead{flex-direction:column;align-items:flex-start}
+  .pg-body{padding:30px}.pg-body h3{font-size:38px}
+  .c-info,form.c-form{padding:30px 24px}
+  .navcta .pill{display:none}
+  .svc{min-height:360px}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="wrap">
+
+<nav class="top" id="nav">
+  <a href="#top" class="logo">محمد الموسى</a>
+  <div class="links">
+    <a href="#partners">الشركاء</a>
+    <a href="#outbox">أوت بوكس</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">تواصل</a>
+  </div>
+  <div class="navcta">
+    <a href="#contact" class="pill">اطلب إعلانك</a>
+    <a href="#contact" class="circle" aria-label="اطلب إعلانك"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></a>
+    <button class="burger" id="burger" aria-label="القائمة"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<main id="top">
+<section class="row">
+  <div class="card white hero-text fx rv" style="--f:1.15">
+    <div class="kicker"><i></i><i></i><i></i><i></i>صانع محتوى ومؤثر سعودي — 2026</div>
+    <h1><span class="w" style="animation-delay:.15s">أساعد</span> <span class="w" style="animation-delay:.27s">البراندات</span> <span class="hl"><span class="w" style="animation-delay:.39s">تحكي</span> <span class="w" style="animation-delay:.51s">قصص</span></span> <span class="w" style="animation-delay:.63s">أفضل.</span></h1>
+    <p>أنا محمد الموسى. أوصل رسالتك لجمهور يعرفني ويثق فيني، بمحتوى قريب من الناس وإنتاج يليق بعلامتك.</p>
+    <div class="hero-foot">
+      <a href="#contact" class="pill black">اطلب إعلانك الحين</a>
+      <div class="wave">
+        <svg viewBox="0 0 34 28" fill="currentColor" aria-hidden="true"><rect x="0" y="10" width="2.4" height="8" rx="1"/><rect x="5" y="7" width="2.4" height="14" rx="1"/><rect x="10" y="3" width="2.4" height="22" rx="1"/><rect x="15" y="0" width="2.4" height="28" rx="1"/><rect x="20" y="4" width="2.4" height="20" rx="1"/><rect x="25" y="8" width="2.4" height="12" rx="1"/><rect x="30" y="11" width="2.4" height="6" rx="1"/></svg>
+        <span>مرخّص من الهيئة العامة<br>لتنظيم الإعلام</span>
+      </div>
+    </div>
+  </div>
+  <div class="card hero-photo media shade ar rv clip" style="--ar:1202/1800">
+    <img src="mohammed-smile.jpg" alt="محمد الموسى مبتسم بجاكيت بني">
+    <div class="ph-top">
+      <span class="ph-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
+      <span class="ph-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>سفير بيجو · المجدوعي</span>
+    </div>
+    <div class="ph-cap">قريب من الناس،<br>ويوصل لهم.</div>
+  </div>
+</section>
+
+<section class="bento">
+  <a href="#contact" class="card red contact-mini s7 rv">
+    <div class="cm-photo"><img src="mohammed-orange-glasses.jpg" alt="بورتريه محمد الموسى بنظارة برتقالية"></div>
+    <div class="cm-body">
+      <div class="cm-meta"><span>نرد خلال يوم عمل</span><span dir="ltr">@MohammedAlmousa</span></div>
+      <h2>تبي تعلن؟ خلّ علامتك<br>تنتشر معي. <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></h2>
+    </div>
+  </a>
+  <div class="card white stats s5 rv">
+    <div class="stat-row">
+      <div class="big"><span data-count="4">4</span> <small>شراكات<br>نشطة مع براندات</small></div>
+      <span class="pal" aria-hidden="true"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i></span>
+    </div>
+    <div class="chips">
+      <span class="chip"><i style="background:var(--red)"></i>فلوقات ريلز</span>
+      <span class="chip"><i style="background:var(--orange)"></i>مقابلات</span>
+      <span class="chip"><i style="background:var(--green)"></i>سناب شات</span>
+      <span class="chip"><i style="background:var(--blue)"></i>وثائقيات</span>
+      <span class="chip">Instagram</span>
+      <span class="chip">TikTok</span>
+      <span class="chip">YouTube</span>
+    </div>
+  </div>
+</section>
+
+
+<section id="partners">
+  <div class="shead rv">
+    <div>
+      <div class="kicker"><i></i><i></i><i></i><i></i>شركاء النجاح</div>
+      <h2 style="margin-top:14px">براندات وثقت فيني.</h2>
+    </div>
+    <p>شراكات حقيقية مستمرة، ومعها أكواد خصم حصرية لمتابعيني.</p>
+  </div>
+
+  <div class="logos rv" aria-label="شعارات الشركاء">
+    <span class="pwm">PEUGEOT</span>
+    <b style="font-size:22px">المجدوعي</b>
+    <img src="styli-black.png" alt="Styli">
+    <img src="goldenscent-logo-black.png" alt="Golden Scent" style="height:32px">
+    <img src="belvoir-black.png" alt="Belvoir &amp; Co" style="height:58px">
+  </div>
+
+  <div class="row">
+    <article class="card peugeot media ar rv clip" style="--ar:2000/1561">
+      <img src="peugeot-mountains.jpg" alt="سيارة بيجو 408 على قمة جبل وقت الغروب في السعودية">
+      <div class="pg-body">
+        <span class="tag" style="align-self:flex-start">سفير رسمي · BRAND AMBASSADOR</span>
+        <h3>سفير بيجو<br>في السعودية.</h3>
+        <p>مع وكالة المجدوعي، أقدّم سيارات بيجو لجمهوري بتجربة حقيقية وقريبة، من الطريق للتفاصيل.</p>
+        <div class="pg-foot">
+          <span class="wm">PEUGEOT</span><span class="sep"></span><span>المجدوعي</span>
+          <a href="https://marwanaljuzuly.my.canva.site/mohmmwedpeugeot" target="_blank" rel="noopener" class="circle" aria-label="شوف الشراكة" style="margin-inline-start:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></a>
+        </div>
+      </div>
+    </article>
+    <div class="card side media shade ar rv clip" style="--ar:9/16">
+      <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-studio-wide.jpg" aria-label="مقطع من مقابلة محمد الموسى عن بيجو 408"><source src="clip-studio-wide.mp4" type="video/mp4"></video>
+      <span class="vtag"><i></i>مقابلة بيجو 408</span>
+      <div class="ph-cap">من الاستوديو،<br>مع بيجو.</div>
+    </div>
+  </div>
+
+  <div class="bento">
+    <article class="card white coupon s4 rv">
+      <div class="cp-top"><div class="cp-brand"><small>أزياء</small><img src="styli-black.png" alt="Styli"></div><span class="tag">شريك</span></div>
+      <div class="cp-cut"></div>
+      <div class="cp-bottom"><div class="code"><small>كود الخصم</small><b>MOSA</b></div><button class="copy" data-code="MOSA">انسخ الكود</button></div>
+    </article>
+    <article class="card dark coupon s4 rv">
+      <div class="cp-top"><div class="cp-brand"><small>عطور</small><img src="goldenscent-logo-white.png" alt="Golden Scent" style="height:44px;margin-top:4px"></div><span class="tag">شريك</span></div>
+      <div class="cp-cut"></div>
+      <div class="cp-bottom"><div class="code"><small>كود الخصم</small><b>MUS</b></div><button class="copy" data-code="MUS">انسخ الكود</button></div>
+    </article>
+    <article class="card blue coupon s4 rv">
+      <div class="cp-top"><div class="cp-brand"><small>نظارات</small><img src="belvoir-white.png" alt="Belvoir & Co" style="height:78px;margin-top:-10px"></div><span class="tag">شريك</span></div>
+      <div class="cp-cut"></div>
+      <div class="cp-bottom"><div class="code"><small>كود الخصم</small><b>MOSA</b></div><button class="copy" data-code="MOSA">انسخ الكود</button></div>
+    </article>
+  </div>
+</section>
+
+<section aria-label="من كواليس الشغل">
+  <div class="shead rv">
+    <div>
+      <div class="kicker"><i></i><i></i><i></i><i></i>من كواليس الشغل</div>
+      <h2 style="margin-top:14px">شوف كيف نشتغل.</h2>
+    </div>
+    <p>لقطات من مقابلة بيجو 408 ومن الطريق معها.</p>
+  </div>
+  <div class="row reels">
+    <div class="card media shade ar rv clip" style="--ar:9/16">
+      <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-smile.jpg" aria-label="محمد الموسى يبتسم أثناء المقابلة"><source src="clip-smile.mp4" type="video/mp4"></video>
+      <span class="vtag"><i></i>مقابلة</span>
+    </div>
+    <div class="card media shade ar rv clip" style="--ar:16/9">
+      <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-road.jpg" aria-label="سيارة بيجو 408 على الطريق بالليل"><source src="clip-road.mp4" type="video/mp4"></video>
+      <span class="vtag"><i></i>بيجو 408</span>
+      <div class="ph-cap">من الطريق، مع بيجو.</div>
+    </div>
+    <div class="card media shade ar rv clip" style="--ar:9/16">
+      <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-talk.jpg" aria-label="محمد الموسى يتكلم للكاميرا"><source src="clip-talk.mp4" type="video/mp4"></video>
+      <span class="vtag"><i></i>مقابلة</span>
+    </div>
+  </div>
+</section>
+
+<section class="row story" aria-label="عن محمد">
+  <div class="card dark story-text fx rv" style="--f:1.1">
+    <div class="dots"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i></div>
+    <h2>كل قصة حلوة<br>تبدأ بفكرة.</h2>
+    <p>رؤية فنية، وتنفيذ تقني، وجمهور يثق. أشتغل على كل إعلان كأنه قصتي أنا، مع فريق استديو الموسى.</p>
+  </div>
+  <div class="card media ar rv clip" style="--ar:1086/1448">
+    <img src="mohammed-reading.jpg" alt="محمد الموسى يقرأ كتاباً في مكتبة بإضاءة دافئة">
+  </div>
+</section>
+
+<section id="outbox" aria-label="وكالة أوت بوكس">
+  <div class="shead rv">
+    <div>
+      <div class="kicker"><i></i><i></i><i></i><i></i>مشاريعي</div>
+      <h2 style="margin-top:14px">أوت بوكس. صُنّاع.</h2>
+    </div>
+    <p>الوكالة الإبداعية اللي أديرها، للهويات والمحتوى والإعلانات.</p>
+  </div>
+  <div class="row">
+    <div class="card blue ob-text fx rv" style="--f:1">
+      <span class="tag" style="align-self:flex-start">وكالة إبداعية · CREATIVE AGENCY</span>
+      <h3>مو مجرد مسمى.<br>هذه عقليتنا.</h3>
+      <p>من الهوية للمحتوى للإعلانات، أوت بوكس تشتغل مع البراندات بأسعار واضحة، وخطوات واضحة، وتنفيذ حقيقي.</p>
+      <ul class="ob-list">
+        <li><b style="background:var(--red)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></b>نبني.</li>
+        <li><b style="background:var(--orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="6"/></svg></b>نحل.</li>
+        <li><b style="background:#EDE8DF;color:var(--ink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18L12 6l6 12"/></svg></b>نطلق.</li>
+        <li><b style="background:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></b>ونكمل اللي ناقص.</li>
+      </ul>
+      <div class="ob-foot">
+        <a href="https://outboxcreativity.com" target="_blank" rel="noopener" class="pill">زُر أوت بوكس <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></a>
+        <small>outboxcreativity.com</small>
+      </div>
+    </div>
+    <div class="card slider ar rv clip" style="--ar:4/5" aria-roledescription="carousel" aria-label="إعلانات أوت بوكس">
+      <div class="slides" id="obSlides" dir="ltr">
+        <a href="https://outboxcreativity.com" target="_blank" rel="noopener" aria-label="إعلان أوت بوكس: صُنّاع"><img src="outbox-1.jpg" alt="إعلان أوت بوكس: صُنّاع، مو مجرد مسمى، هذه عقليتنا"></a>
+        <a href="https://outboxcreativity.com" target="_blank" rel="noopener" aria-label="إعلان أوت بوكس: Build it"><img src="outbox-2.jpg" alt="إعلان أوت بوكس: Can't? Not our process. Build it."></a>
+      </div>
+      <div class="sl-ctrl">
+        <div class="sl-btns">
+          <button type="button" class="circle" id="obNext" aria-label="الإعلان التالي"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button type="button" class="circle" id="obPrev" aria-label="الإعلان السابق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="sl-dots" id="obDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="shead rv">
+    <div>
+      <div class="kicker"><i></i><i></i><i></i><i></i>الخدمات الإعلانية</div>
+      <h2 style="margin-top:14px">وش نقدر نسوي لعلامتك؟</h2>
+    </div>
+    <p>أربع طرق نوصل فيها قصتك، وكل الإنتاج بإشراف استديو الموسى.</p>
+  </div>
+  <div class="bento">
+    <a href="#contact" class="card red svc s3 rv" data-type="reels">
+      <div class="svc-top"><span class="num">01</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M3 8h18"/><path d="M10 12.5l4.5 2.5-4.5 2.5z"/></svg></span></div>
+      <h3>فلوقات على الريلز</h3>
+      <p>آخذ جمهوري معي في يوم مع منتجك، بفلوق خفيف وقريب ينحفظ ويتشارك.</p>
+      <span class="go">اطلب هذي الخدمة <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></span>
+    </a>
+    <a href="#contact" class="card orange svc s3 rv" data-type="interview">
+      <div class="svc-top"><span class="num">02</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0014 0"/><path d="M12 17v4"/></svg></span></div>
+      <h3>مقابلات عن المنتج</h3>
+      <p>لقاء قصير أتكلم فيه عن منتجك بصراحة ووضوح، وأجاوب على الأسئلة اللي في بال الناس.</p>
+      <span class="go">اطلب هذي الخدمة <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></span>
+    </a>
+    <a href="#contact" class="card green svc s3 rv" data-type="snap">
+      <div class="svc-top"><span class="num">03</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 0 5 2.2 5 5.2v2.3l1.8.6c.5.2.4.8 0 1l-1.9.8c.6 1.6 2 2.8 3.3 3.1-.4.8-1.6 1-2.6 1.2l-.4 1.1c-1-.2-2 0-3.2.8-1.3.8-2.7.8-4 0-1.2-.8-2.2-1-3.2-.8l-.4-1.1c-1-.2-2.2-.4-2.6-1.2 1.3-.3 2.7-1.5 3.3-3.1l-1.9-.8c-.4-.2-.5-.8 0-1l1.8-.6V8.2C7 5.2 9 3 12 3z"/></svg></span></div>
+      <h3>إعلانات سناب شات</h3>
+      <p>سنابات تعرّف متابعيني على علامتك بشكل طبيعي، وسط يومياتي وبدون تكلّف.</p>
+      <span class="go">اطلب هذي الخدمة <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></span>
+    </a>
+    <a href="#contact" class="card blue svc s3 rv" data-type="doc">
+      <div class="svc-top"><span class="num">04</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="14" height="11" rx="2"/><path d="M16 11l6-3v9l-6-3"/><circle cx="6" cy="4" r="2"/><circle cx="12" cy="4" r="2"/></svg></span></div>
+      <h3>وثائقيات</h3>
+      <p>قصة علامتك من ورا الكواليس، بإنتاج وثائقي يعيش أطول من أي إعلان.</p>
+      <span class="go">اطلب هذي الخدمة <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></span>
+    </a>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:72px">
+  <div class="row">
+    <div class="card c-photo media shade ar rv clip" style="--ar:1003/1800">
+      <img src="mohammed-hand.jpg" alt="محمد الموسى يمد يده نحو الكاميرا بالأبيض والأسود">
+      <div class="ph-cap">خلّها علينا.</div>
+    </div>
+    <div class="card orange c-info fx rv" style="--f:1.3">
+      <div class="kicker"><i></i><i></i><i></i><i></i>اطلب إعلانك</div>
+      <h2>تبي تعلن معي؟<br>الموضوع أسهل مما تتوقع.</h2>
+      <div class="steps">
+        <div class="step"><b>1</b>عبّ النموذج بتفاصيل بسيطة عن علامتك.</div>
+        <div class="step"><b>2</b>نتواصل معك خلال يوم عمل بفكرة مبدئية.</div>
+        <div class="step"><b>3</b>نتفق على التفاصيل ونبدأ الشغل.</div>
+      </div>
+      <div class="c-row">
+        <div class="c-mail"><small>إدارة الأعمال</small><a href="mailto:mohammed@mohammedalmousa.net">mohammed@mohammedalmousa.net</a></div>
+        <div class="socials">
+          <a href="https://www.instagram.com/MohammedAlmousa" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@MohammedAlmousa" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.snapchat.com/add/MohammedAlmousa" target="_blank" rel="noopener">Snapchat</a>
+          <a href="https://www.youtube.com/@MohammedAlmousa" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.twitch.tv/MohammedAlmousa" target="_blank" rel="noopener">Twitch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="card white c-form rv" id="form" action="mailto:mohammed@mohammedalmousa.net" method="post" enctype="text/plain">
+    <div class="c-form-head">
+      <div><h3>اطلب إعلانك</h3><p class="sub">كم سؤال بسيط، ونرجع لك بخطوة عملية.</p></div>
+    </div>
+    <fieldset style="border:0;display:flex;flex-direction:column;gap:10px">
+      <legend style="font-size:14px;font-weight:600;margin-bottom:10px">نوع الإعلان (تقدر تختار أكثر من واحد)</legend>
+      <div class="types">
+        <label><input type="checkbox" name="type" value="فلوق ريلز" id="t-reels"><span><i style="background:var(--red)"></i>فلوق على الريلز</span></label>
+        <label><input type="checkbox" name="type" value="مقابلة" id="t-interview"><span><i style="background:var(--orange)"></i>مقابلة عن المنتج</span></label>
+        <label><input type="checkbox" name="type" value="سناب شات" id="t-snap"><span><i style="background:var(--green)"></i>إعلان سناب شات</span></label>
+        <label><input type="checkbox" name="type" value="وثائقي" id="t-doc"><span><i style="background:var(--blue)"></i>وثائقي</span></label>
+      </div>
+    </fieldset>
+    <div class="fgrid">
+      <label>اسم الشركة<input name="company" type="text" required placeholder="اسم علامتك"></label>
+      <label>إيميل التواصل<input name="email" type="email" required dir="ltr"></label>
+      <label>الميزانية المتوقعة
+        <select name="budget"><option>[نطاق 1]</option><option>[نطاق 2]</option><option>[نطاق 3]</option><option>نتفاهم عليها</option></select>
+      </label>
+    </div>
+    <label>حسابات الشركة على السوشال (اختياري)<input name="socials" type="text" dir="ltr" placeholder="@brand"></label>
+    <label>كلمنا عن فكرتك (اختياري)<textarea name="message"></textarea></label>
+    <div class="f-foot">
+      <small>نرد عليك خلال يوم عمل.</small>
+      <button type="submit" class="pill black">أرسل الطلب <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></button>
+    </div>
+  </form>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 محمد الموسى. جميع الحقوق محفوظة.</span>
+  <span class="pal" aria-hidden="true"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i></span>
+  <span dir="ltr">mohammedalmousa.net</span>
+</footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var toast=document.getElementById('toast'),tt;
+  function show(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},1800)}
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var c=b.getAttribute('data-code'),label=b.textContent;
+      var done=function(){b.classList.add('done');b.textContent='تم النسخ';show('تم نسخ الكود '+c);setTimeout(function(){b.classList.remove('done');b.textContent=label},1600)};
+      if(navigator.clipboard){navigator.clipboard.writeText(c).then(done,done)}else{done()}
+    });
+  });
+  var map={reels:'t-reels',interview:'t-interview',snap:'t-snap',doc:'t-doc'};
+  document.querySelectorAll('.svc[data-type]').forEach(function(a){
+    a.addEventListener('click',function(){var el=document.getElementById(map[a.dataset.type]);if(el)el.checked=true});
+  });
+  var nav=document.getElementById('nav');
+  document.getElementById('burger').addEventListener('click',function(){nav.classList.toggle('open')});
+  nav.querySelectorAll('.links a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open')})});
+
+  // reveal
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  // counter
+  var cnt=document.querySelector('[data-count]');
+  if(cnt && !reduce && 'IntersectionObserver' in window){
+    var target=+cnt.dataset.count;cnt.textContent='0';
+    var co=new IntersectionObserver(function(es){if(es[0].isIntersecting){co.disconnect();var s=null;function step(ts){if(!s)s=ts;var p=Math.min((ts-s)/1200,1);cnt.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}},{threshold:.6});
+    co.observe(cnt);
+  }
+
+  // scroll: progress, nav, parallax
+  var prog=document.getElementById('progress'),par=document.getElementById('parallax'),ticking=false;
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight,y=h.scrollTop||document.body.scrollTop;
+    prog.style.transform='scaleX('+(max>0?y/max:0)+')';
+    nav.classList.toggle('scrolled',y>40);
+    if(par && !reduce){var r=par.parentElement.getBoundingClientRect(),vh=window.innerHeight;if(r.bottom>0&&r.top<vh){var k=(r.top+r.height/2-vh/2)/vh;par.style.transform='translateY('+(k*-12)+'%)'}}
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+  onScroll();
+
+  // looping clips: play only while visible, never when reduced motion is on
+  var vids=document.querySelectorAll('video.loop');
+  if(reduce){vids.forEach(function(v){v.removeAttribute('autoplay');v.pause()})}
+  if(!reduce && 'IntersectionObserver' in window){
+    var vo=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.pause()}})},{threshold:.25});
+    vids.forEach(function(v){vo.observe(v)});
+  }
+
+  // Outbox slider
+  var sl=document.getElementById('obSlides');
+  if(sl){
+    var items=sl.children,dots=document.getElementById('obDots'),idx=0,timer=null;
+    for(var i=0;i<items.length;i++){(function(i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','الإعلان '+(i+1));b.addEventListener('click',function(){go(i);restart()});dots.appendChild(b)})(i)}
+    function mark(){[].forEach.call(dots.children,function(d,i){d.setAttribute('aria-current',i===idx?'true':'false')})}
+    function go(i){idx=(i+items.length)%items.length;sl.scrollTo({left:idx*sl.clientWidth,behavior:reduce?'auto':'smooth'});mark()}
+    sl.addEventListener('scroll',function(){var i=Math.round(sl.scrollLeft/sl.clientWidth);if(i!==idx){idx=i;mark()}},{passive:true});
+    document.getElementById('obNext').addEventListener('click',function(){go(idx+1);restart()});
+    document.getElementById('obPrev').addEventListener('click',function(){go(idx-1);restart()});
+    function restart(){clearInterval(timer);if(!reduce)timer=setInterval(function(){go(idx+1)},4500)}
+    sl.parentElement.addEventListener('mouseenter',function(){clearInterval(timer)});
+    sl.parentElement.addEventListener('mouseleave',restart);
+    mark();restart();
+  }
+
+  // tilt on service cards
+  if(!reduce && window.matchMedia('(hover:hover)').matches){
+    document.querySelectorAll('.svc').forEach(function(c){
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*10)+'deg) rotateX('+(-y*10)+'deg) translateY(-6px)'});
+      c.addEventListener('pointerleave',function(){c.style.transform=''});
+    });
+  }
+})();
+</script>
+</body>
+</html>
