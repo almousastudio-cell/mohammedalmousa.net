@@ -149,9 +149,9 @@ nav.top.scrolled::before{opacity:1}
 @keyframes draw{to{transform:scaleX(1)}}
 
 /* ROW 2 */
-.contact-mini{padding:26px;display:flex;gap:28px;min-height:260px}
-.cm-photo{width:190px;flex-shrink:0;position:relative;align-self:flex-start;margin-inline-end:28px}
-.cm-photo img{width:100%;height:auto;aspect-ratio:1017/1800;object-fit:cover;border-radius:18px;box-shadow:-14px 0 0 var(--orange),-28px 0 0 var(--ink);transition:box-shadow .4s var(--ease)}
+.contact-mini{padding:26px;display:flex;gap:28px;min-height:260px;overflow:hidden}
+.cm-photo{width:190px;flex-shrink:0;position:relative;margin-inline-end:28px}
+.cm-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;border-radius:18px;box-shadow:-14px 0 0 var(--orange),-28px 0 0 var(--ink);transition:box-shadow .4s var(--ease)}
 .contact-mini:hover .cm-photo img{box-shadow:-20px 0 0 var(--orange),-40px 0 0 var(--ink)}
 .cm-body{flex:1;display:flex;flex-direction:column;padding-inline-start:16px}
 .cm-meta{display:flex;justify-content:space-between;font-size:13px;font-weight:600;opacity:.9}
@@ -292,6 +292,11 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
   *{transition:none!important}
 }
 
+@media (min-width:1001px){
+  .row>.ar{aspect-ratio:auto;flex:calc(var(--f,1)) 1 0}
+  .row.h66{height:660px}.row.h54{height:540px}.row.h46{height:460px}.row.h32{height:320px}.row.h62{height:620px}
+  .row>.slidercol{flex:0 0 500px}
+}
 @media (max-width:1000px){
   .links{display:none}.burger{display:block}
   nav.top.open .links{display:flex;position:absolute;top:100%;inset-inline:0;flex-direction:column;background:#1B1B1B;padding:22px;border-radius:18px;gap:18px}
@@ -330,8 +335,8 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
 </nav>
 
 <main id="top">
-<section class="row">
-  <div class="card white hero-text fx rv" style="--f:1.15">
+<section class="row h66">
+  <div class="card white hero-text fx rv" style="--f:1.2">
     <div class="kicker"><i></i><i></i><i></i><i></i>صانع محتوى ومؤثر سعودي — 2026</div>
     <h1><span class="w" style="animation-delay:.15s">أساعد</span> <span class="w" style="animation-delay:.27s">البراندات</span> <span class="hl"><span class="w" style="animation-delay:.39s">تحكي</span> <span class="w" style="animation-delay:.51s">قصص</span></span> <span class="w" style="animation-delay:.63s">أفضل.</span></h1>
     <p>أنا محمد الموسى. أوصل رسالتك لجمهور يعرفني ويثق فيني، بمحتوى قريب من الناس وإنتاج يليق بعلامتك.</p>
@@ -343,7 +348,7 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
       </div>
     </div>
   </div>
-  <div class="card hero-photo media shade ar rv clip" style="--ar:1202/1800">
+  <div class="card hero-photo media shade ar rv clip" style="--ar:1202/1800;--f:0.85">
     <img src="mohammed-smile.jpg" alt="محمد الموسى مبتسم بجاكيت بني">
     <div class="ph-top">
       <span class="ph-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
@@ -353,15 +358,15 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
   </div>
 </section>
 
-<section class="bento">
-  <a href="#contact" class="card red contact-mini s7 rv">
+<section class="row h32">
+  <a href="#contact" class="card red contact-mini fx rv" style="--f:1.45">
     <div class="cm-photo"><img src="mohammed-orange-glasses.jpg" alt="بورتريه محمد الموسى بنظارة برتقالية"></div>
     <div class="cm-body">
       <div class="cm-meta"><span>نرد خلال يوم عمل</span><span dir="ltr">@MohammedAlmousa</span></div>
       <h2>تبي تعلن؟ خلّ علامتك<br>تنتشر معي. <span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 17L7 7"/><path d="M7 16V7h9"/></svg></span></h2>
     </div>
   </a>
-  <div class="card white stats s5 rv">
+  <div class="card white stats fx rv" style="--f:1">
     <div class="stat-row">
       <div class="big"><span data-count="4">4</span> <small>شراكات<br>نشطة مع براندات</small></div>
       <span class="pal" aria-hidden="true"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i></span>
@@ -396,8 +401,8 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
     <img src="belvoir-black.png" alt="Belvoir &amp; Co" style="height:58px">
   </div>
 
-  <div class="row">
-    <article class="card peugeot media ar rv clip" style="--ar:2000/1561">
+  <div class="row h54">
+    <article class="card peugeot media ar rv clip" style="--ar:2000/1561;--f:2.1">
       <img src="peugeot-mountains.jpg" alt="سيارة بيجو 408 على قمة جبل وقت الغروب في السعودية">
       <div class="pg-body">
         <span class="tag" style="align-self:flex-start">سفير رسمي · BRAND AMBASSADOR</span>
@@ -409,7 +414,7 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
         </div>
       </div>
     </article>
-    <div class="card side media shade ar rv clip" style="--ar:9/16">
+    <div class="card side media shade ar rv clip" style="--ar:9/16;--f:0.66">
       <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-studio-wide.jpg" aria-label="مقطع من مقابلة محمد الموسى عن بيجو 408"><source src="clip-studio-wide.mp4" type="video/mp4"></video>
       <span class="vtag"><i></i>مقابلة بيجو 408</span>
       <div class="ph-cap">من الاستوديو،<br>مع بيجو.</div>
@@ -443,31 +448,31 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
     </div>
     <p>لقطات من مقابلة بيجو 408 ومن الطريق معها.</p>
   </div>
-  <div class="row reels">
-    <div class="card media shade ar rv clip" style="--ar:9/16">
+  <div class="row reels h46">
+    <div class="card media shade ar rv clip" style="--ar:9/16;--f:1">
       <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-smile.jpg" aria-label="محمد الموسى يبتسم أثناء المقابلة"><source src="clip-smile.mp4" type="video/mp4"></video>
       <span class="vtag"><i></i>مقابلة</span>
     </div>
-    <div class="card media shade ar rv clip" style="--ar:16/9">
+    <div class="card media shade ar rv clip" style="--ar:16/9;--f:1.4">
       <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-road.jpg" aria-label="سيارة بيجو 408 على الطريق بالليل"><source src="clip-road.mp4" type="video/mp4"></video>
       <span class="vtag"><i></i>بيجو 408</span>
       <div class="ph-cap">من الطريق، مع بيجو.</div>
     </div>
-    <div class="card media shade ar rv clip" style="--ar:9/16">
+    <div class="card media shade ar rv clip" style="--ar:9/16;--f:1">
       <video class="loop" autoplay muted loop playsinline preload="auto" poster="clip-talk.jpg" aria-label="محمد الموسى يتكلم للكاميرا"><source src="clip-talk.mp4" type="video/mp4"></video>
       <span class="vtag"><i></i>مقابلة</span>
     </div>
   </div>
 </section>
 
-<section class="row story" aria-label="عن محمد">
+<section class="row story h54" aria-label="عن محمد">
   <div class="card dark story-text fx rv" style="--f:1.1">
     <div class="dots"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i></div>
     <h2>كل قصة حلوة<br>تبدأ بفكرة.</h2>
     <p>رؤية فنية، وتنفيذ تقني، وجمهور يثق. أشتغل على كل إعلان كأنه قصتي أنا، مع فريق استديو الموسى.</p>
   </div>
-  <div class="card media ar rv clip" style="--ar:1086/1448">
-    <img src="mohammed-reading.jpg" alt="محمد الموسى يقرأ كتاباً في مكتبة بإضاءة دافئة">
+  <div class="card media ar rv clip" style="--ar:1086/1448;--f:0.95">
+    <img style="object-position:50% 25%" src="mohammed-reading.jpg" alt="محمد الموسى يقرأ كتاباً في مكتبة بإضاءة دافئة">
   </div>
 </section>
 
@@ -479,7 +484,7 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
     </div>
     <p>الوكالة الإبداعية اللي أديرها، للهويات والمحتوى والإعلانات.</p>
   </div>
-  <div class="row">
+  <div class="row h62">
     <div class="card blue ob-text fx rv" style="--f:1">
       <span class="tag" style="align-self:flex-start">وكالة إبداعية · CREATIVE AGENCY</span>
       <h3>مو مجرد مسمى.<br>هذه عقليتنا.</h3>
@@ -495,7 +500,7 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
         <small>outboxcreativity.com</small>
       </div>
     </div>
-    <div class="card slider ar rv clip" style="--ar:4/5" aria-roledescription="carousel" aria-label="إعلانات أوت بوكس">
+    <div class="card slider ar slidercol rv clip" style="--ar:4/5" aria-roledescription="carousel" aria-label="إعلانات أوت بوكس">
       <div class="slides" id="obSlides" dir="ltr">
         <a href="https://outboxcreativity.com" target="_blank" rel="noopener" aria-label="إعلان أوت بوكس: صُنّاع"><img src="outbox-1.jpg" alt="إعلان أوت بوكس: صُنّاع، مو مجرد مسمى، هذه عقليتنا"></a>
         <a href="https://outboxcreativity.com" target="_blank" rel="noopener" aria-label="إعلان أوت بوكس: Build it"><img src="outbox-2.jpg" alt="إعلان أوت بوكس: Can't? Not our process. Build it."></a>
@@ -548,12 +553,12 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
 </section>
 
 <section id="contact" style="padding-top:72px">
-  <div class="row">
-    <div class="card c-photo media shade ar rv clip" style="--ar:1003/1800">
+  <div class="row h54">
+    <div class="card c-photo media shade ar rv clip" style="--ar:1003/1800;--f:0.66">
       <img src="mohammed-hand.jpg" alt="محمد الموسى يمد يده نحو الكاميرا بالأبيض والأسود">
       <div class="ph-cap">خلّها علينا.</div>
     </div>
-    <div class="card orange c-info fx rv" style="--f:1.3">
+    <div class="card orange c-info fx rv" style="--f:1.9">
       <div class="kicker"><i></i><i></i><i></i><i></i>اطلب إعلانك</div>
       <h2>تبي تعلن معي؟<br>الموضوع أسهل مما تتوقع.</h2>
       <div class="steps">
