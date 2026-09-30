@@ -606,7 +606,12 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
     </div>
   </div>
 
-  <form class="card white c-form rv" id="form" action="mailto:mohammed@mohammedalmousa.net" method="post" enctype="text/plain">
+  <form class="card white c-form rv" id="form" action="https://formsubmit.co/mohammed@mohammedalmousa.net" method="POST">
+    <input type="hidden" name="_subject" value="طلب إعلان جديد — mohammedalmousa.net">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="http://mohammedalmousa.net/?sent=1#contact">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
     <div class="c-form-head">
       <div><h3>اطلب إعلانك</h3><p class="sub">كم سؤال بسيط، ونرجع لك بخطوة عملية.</p></div>
     </div>
@@ -623,7 +628,7 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
       <label>اسم الشركة<input name="company" type="text" required placeholder="اسم علامتك"></label>
       <label>إيميل التواصل<input name="email" type="email" required dir="ltr"></label>
       <label>الميزانية المتوقعة
-        <select name="budget"><option>[نطاق 1]</option><option>[نطاق 2]</option><option>[نطاق 3]</option><option>نتفاهم عليها</option></select>
+        <select name="budget"><option>أقل من 10,000 ريال</option><option>10,000 – 30,000 ريال</option><option>30,000 – 70,000 ريال</option><option>أكثر من 70,000 ريال</option><option>نتفاهم عليها</option></select>
       </label>
     </div>
     <label>حسابات الشركة على السوشال (اختياري)<input name="socials" type="text" dir="ltr" placeholder="@brand"></label>
@@ -650,6 +655,10 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var toast=document.getElementById('toast'),tt;
   function show(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},1800)}
+  if(new URLSearchParams(location.search).get('sent')){
+    setTimeout(function(){toast.textContent='وصلنا طلبك ✅ نرد عليك خلال يوم عمل';toast.classList.add('show');tt=setTimeout(function(){toast.classList.remove('show')},4000)},600);
+    try{history.replaceState(null,'',location.pathname+location.hash)}catch(e){}
+  }
   document.querySelectorAll('.copy').forEach(function(b){
     b.addEventListener('click',function(){
       var c=b.getAttribute('data-code'),label=b.textContent;
