@@ -492,6 +492,41 @@ footer{display:flex;justify-content:space-between;align-items:center;color:#8C86
   </div>
 </section>
 
+<section id="films" aria-label="الأفلام كاملة">
+  <style>
+  .films{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:center}
+  @media(min-width:900px){.films{grid-template-columns:minmax(0,380px) minmax(0,1fr)}}
+  .fv{background:#000;aspect-ratio:var(--ar);width:100%}
+  .fv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000;display:block}
+  .fv-play{position:absolute;inset:0;margin:auto;width:84px;height:84px;border:0;border-radius:999px;background:var(--orange);color:var(--ink);display:grid;place-items:center;z-index:3;transition:transform .35s var(--ease)}
+  .fv-play:hover{transform:scale(1.08)}
+  .fv-play svg{width:34px;height:34px}
+  .fv.playing .fv-play,.fv.playing .vtag{display:none}
+  </style>
+  <div class="shead rv">
+    <div>
+      <div class="kicker"><i></i><i></i><i></i><i></i>الأفلام كاملة</div>
+      <h2 style="margin-top:14px">شوف الشغل كامل.</h2>
+    </div>
+    <p>المقابلة الكاملة وفيلم بيجو 408، بالصوت وبدون قص.</p>
+  </div>
+  <div class="films">
+    <div class="card fv rv" style="--ar:9/16">
+      <video preload="none" playsinline poster="interview-poster.jpg" aria-label="مقابلة محمد الموسى الكاملة عن بيجو 408"><source src="interview-full.mp4" type="video/mp4"></video>
+      <span class="vtag"><i></i>المقابلة كاملة</span>
+      <button type="button" class="fv-play" aria-label="شغّل المقابلة"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+    </div>
+    <div class="card fv rv" style="--ar:16/9">
+      <video preload="none" playsinline poster="peugeot-film-poster.jpg" aria-label="فيلم بيجو 408 كامل"><source src="peugeot-film.mp4" type="video/mp4"></video>
+      <span class="vtag"><i></i>فيلم بيجو 408</span>
+      <button type="button" class="fv-play" aria-label="شغّل الفيلم"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+    </div>
+  </div>
+  <script>
+  (function(){var vs=document.querySelectorAll('.fv video');vs.forEach(function(v){var box=v.parentNode,b=box.querySelector('.fv-play');b.addEventListener('click',function(){vs.forEach(function(o){if(o!==v)o.pause()});v.controls=true;v.play()});v.addEventListener('play',function(){box.classList.add('playing')})})})();
+  </script>
+</section>
+
 <section class="row story h54" aria-label="عن محمد">
   <div class="card dark story-text fx rv" style="--f:1.1">
     <div class="dots"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i></div>
